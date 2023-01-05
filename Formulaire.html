@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/ma-page-de-traitement" method="post">
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="name" name="user_name">
+    </div>
+    <div>
+        <label for="prenom">Nom :</label>
+        <input type="text" id="prenom" name="user_prenom">
+    </div>
+    <div>
+       <label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2023-01-04"
+       min="1950-01-01" max="2022-12-31">
+    </div>
+    <div>
+        <P>Sexe : <INPUT type="radio" name="sex" value="H" checked> Homme <INPUT type="radio" name="sex" value="F"> Femme
+            <P>
+    </div>
+    <div>
+        <P>Choisissez un pays : <SELECT name="pays">
+            <OPTION>France
+            <OPTION>Italie
+            <OPTION>Allemagne
+            
+        </SELECT>
+    </div>
+    <div>
+        <label for="msg">Message :</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+</form>
+</body>
+</html>
